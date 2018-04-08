@@ -264,10 +264,11 @@ ax.legend(bbox_to_anchor=(1.2, 1.013), title='News Network')
 
 # Save plot as PNG
 
-plt.savefig("sentiment_scatter.png")
+plt.savefig("sentiment_scatter.png", bbox_inches='tight')
 ```
 
 ![png](sentiment_scatter.png)
+
 
 ### Average Sentiment Bar Chart
 
