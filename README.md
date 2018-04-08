@@ -150,23 +150,6 @@ full_df.to_csv("tweets_dataframe.csv")
 full_df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -239,9 +222,6 @@ full_df.head()
     </tr>
   </tbody>
 </table>
-</div>
-
-
 
 ### Sentiment Scatter
 
@@ -287,13 +267,7 @@ ax.legend(bbox_to_anchor=(1.2, 1.013), title='News Network')
 plt.savefig("sentiment_scatter.png")
 ```
 
-    /Users/annariehle/anaconda/envs/py36/lib/python3.6/site-packages/matplotlib/cbook/deprecation.py:106: MatplotlibDeprecationWarning: Adding an axes using the same arguments as a previous axes currently reuses the earlier instance.  In a future version, a new instance will always be created and returned.  Meanwhile, this warning can be suppressed, and the future behavior ensured, by passing a unique label to each axes instance.
-      warnings.warn(message, mplDeprecation, stacklevel=1)
-
-
-
-![png](output_8_1.png)
-
+![png](sentiment_scatter.png)
 
 ### Average Sentiment Bar Chart
 
@@ -369,6 +343,4 @@ plt.title(f"Overall Twitter Sentiment Analysis for {today.strftime('%m/%d/%Y')}"
 plt.savefig("sentiment_bar.png")
 ```
 
-
-![png](output_10_0.png)
-
+![png](sentiment_bar.png)
